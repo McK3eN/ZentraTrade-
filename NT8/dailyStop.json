@@ -1,0 +1,7 @@
+{
+  "dailyStop": 100.0,
+  "maxDailyProfit": 1000.0,
+  "symbol": "ES",
+  "account": "Sim101",
+  "tradingBlocked": true
+}

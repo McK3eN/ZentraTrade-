@@ -1,0 +1,366 @@
+/* === 🌟 COULEUR NÉON OFFICIELLE 🌟 === */
+
+/* === GENERAL BODY === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+  margin: 0;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === NAVBAR STYLE === */
+.navbar {
+  background: linear-gradient(90deg, #ff00cc, #333399);
+  border-bottom: 3px solid #00f0ff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(15, 15, 40, 0.9) !important;
+  box-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
+  transition: all 0.4s ease;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .dropdown-menu a,
+.navbar .dropdown-item {
+  color: #ffffff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #00f0ff;
+  transition: all 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-menu a:hover,
+.navbar .dropdown-item:hover {
+  color: #00f0ff !important;
+}
+
+/* === CALENDRIER CONTAINER === */
+.calendar-container {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  margin-top: 130px;
+  box-shadow: 0 0 30px rgba(0,255,255,0.4);
+  width: 95%;
+  max-width: 1200px;
+  margin: 80px auto 20px auto;
+}
+
+/* === HEADER CALENDRIER === */
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.calendar-header h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px #00f0ff;
+}
+
+#yearButton {
+  background: transparent;
+  border: 2px solid #00f0ff;
+  color: #ffffff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  cursor: default;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+/* === BOUTONS MOIS === */
+.month-btn {
+  background: linear-gradient(135deg, #ff00cc, #333399);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00f0ff;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.month-btn:hover {
+  background: linear-gradient(135deg, #333399, #ff00cc);
+  box-shadow: 0 0 25px #00f0ff;
+  transform: translateY(-4px);
+}
+
+/* === CALENDRIER GRILLE === */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(120px, 1fr)); /* 🔥 120px min mais s'étire au max */
+  width: 100%;
+  gap: 8px;
+  justify-content: stretch; /* 🔥 étirer les colonnes à fond */
+}
+.day-name {
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff00cc, #333399);
+  color: #ffffff;
+  padding: 1rem 0;
+  border-radius: 12px 12px 0 0;
+  text-shadow: 0 0 10px #00f0ff;
+  font-size: 1.2rem;
+}
+
+/* === CASES JOURS === */
+.day {
+  width: 100%; /* 🔥 Étire chaque jour à 100% de sa cellule */
+  aspect-ratio: 1/1; /* 🔥 Fait des carrés parfaits */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 1px solid #5d5ff5;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.day:hover {
+  background: rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 20px #00f0ff;
+  transform: translateY(-5px);
+}
+
+/* CASE AUJOURD'HUI */
+.day.today {
+  background: #00f0ff55;
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+/* CASE PROFIT POSITIF */
+.day.profit-positive {
+  background: rgba(0, 255, 150, 0.3);
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+/* CASE PROFIT NEGATIF */
+.day.profit-negative {
+  background: rgba(255, 0, 150, 0.3);
+  box-shadow: 0 0 15px #ff00cc;
+}
+
+/* JOUR ET PROFIT INSIDE */
+.day-number {
+  font-size: 1.5rem;
+}
+
+.profit-box {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* CASE VIDE */
+.empty {
+  background: transparent;
+  border: none;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 1024px) {
+  .calendar-header h1 {
+    font-size: 3rem;
+  }
+
+  #yearButton {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .month-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .calendar-grid {
+    gap: 8px;
+  }
+
+  .day {
+    min-height: 100px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .calendar-header h1 {
+    font-size: 2.5rem;
+  }
+
+  #yearButton {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .month-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .calendar-grid {
+    gap: 5px;
+  }
+
+  .day-name {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .day {
+    min-height: 80px;
+    font-size: 1rem;
+  }
+
+  .day-number {
+    font-size: 1rem;
+  }
+
+  .profit-box {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-header h1 {
+    font-size: 2rem;
+  }
+
+  .month-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .day {
+    min-height: 60px;
+  }
+
+  .day-number {
+    font-size: 0.9rem;
+  }
+
+  .profit-box {
+    font-size: 0.7rem;
+  }
+}
+
+/* === TABLEAU ACCOUNTS === */
+#accountsTable th:nth-child(1),
+#accountsTable td:nth-child(1) {
+  width: 150px; /* Colonne "Account" */
+}
+
+#accountsTable th:nth-child(2),
+#accountsTable td:nth-child(2) {
+  width: 100px; /* Colonne "Capital" */
+}
+
+#accountsTable th:nth-child(3),
+#accountsTable td:nth-child(3) {
+  width: 100px; /* Colonne "Profit €" */
+}
+
+#accountsTable th:nth-child(4),
+#accountsTable td:nth-child(4) {
+  width: 100px; /* Colonne "Profit %" */
+}
+/* Aligne toutes les cellules au centre */
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap; /* Pas de retour ligne */
+}
+
+/* Fixe largeur pour éviter sauts */
+#accountsTable th, #accountsTable td {
+  min-width: 120px;
+}
+
+#accountSelect {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  background: #1c1f3f;
+  border: 1px solid #5d5ff5;
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 8px #00f0ff88;
+  transition: all 0.3s ease;
+}
+
+#accountSelect:hover {
+  border-color: #00f0ff;
+  box-shadow: 0 0 12px #00f0ff;
+}
+/* Historique des Trades : Fixe les largeurs */
+#tradeHistory th, 
+#tradeHistory td {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap; /* Pas de retour à la ligne */
+  padding: 8px 12px;
+}
+
+/* Colonne par colonne (fixe) */
+#tradeHistory th:nth-child(1),
+#tradeHistory td:nth-child(1) {
+  width: 150px; /* Timestamp */
+}
+
+#tradeHistory th:nth-child(2),
+#tradeHistory td:nth-child(2) {
+  width: 130px; /* Instrument */
+}
+
+#tradeHistory th:nth-child(3),
+#tradeHistory td:nth-child(3) {
+  width: 100px; /* Result */
+}
+
+#tradeHistory th:nth-child(4),
+#tradeHistory td:nth-child(4) {
+  width: 100px; /* Direction */
+}
+
+#tradeHistory th:nth-child(5),
+#tradeHistory td:nth-child(5) {
+  width: 100px; /* Profit */
+}
+
+#tradeHistory th:nth-child(6),
+#tradeHistory td:nth-child(6) {
+  width: 130px; /* Account */
+}

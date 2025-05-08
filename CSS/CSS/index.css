@@ -1,0 +1,200 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+  margin: 0;
+  padding-top: 80px; /* << IMPORTANT pour compenser la hauteur de la navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.calendar-container {
+  width: 95%;
+  max-width: 1600px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  margin-top: 130px;
+  box-shadow: 0 0 30px rgba(0,255,255,0.4);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.calendar-header h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px #00f0ff;
+}
+
+#yearButton {
+  background: transparent;
+  border: 2px solid #00f0ff;
+  color: #ffffff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  cursor: default;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+.month-btn {
+  background: linear-gradient(135deg, #ff00cc, #333399);
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00f0ff;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.month-btn:hover {
+  background: linear-gradient(135deg, #333399, #ff00cc);
+  box-shadow: 0 0 25px #00f0ff;
+  transform: translateY(-4px);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.day-name {
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff00cc, #333399);
+  color: #ffffff;
+  padding: 1rem 0;
+  border-radius: 12px 12px 0 0;
+  text-shadow: 0 0 10px #00f0ff;
+  font-size: 1.2rem;
+}
+
+#days {
+  grid-column: span 7;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+..day {
+  background: rgba(0, 0, 30, 0.6);
+  backdrop-filter: blur(8px);
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ffffff;
+  border: 1px solid #5d5ff5;
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.day:hover {
+  background: rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 20px #00f0ff;
+  transform: translateY(-5px);
+}
+/* === Animation de Navbar au scroll === */
+.navbar.scrolled {
+  background: rgba(15, 15, 40, 0.9) !important;
+  box-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
+  transition: all 0.4s ease;
+}
+
+
+/* ---------------------------------- */
+/* 📱 RESPONSIVE pour les écrans moyens (tablettes) */
+@media (max-width: 1024px) {
+  .calendar-header h1 {
+    font-size: 3rem;
+  }
+
+  #yearButton {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .month-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .day {
+    min-height: 100px;
+    font-size: 1.1rem;
+  }
+}
+
+/* 📱 RESPONSIVE pour petits écrans (mobiles) */
+@media (max-width: 600px) {
+  .calendar-header h1 {
+    font-size: 2.5rem;
+  }
+
+  #yearButton {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .month-btn {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .calendar-grid {
+    gap: 5px;
+  }
+
+  .day-name {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .day {
+    min-height: 80px;
+    font-size: 1rem;
+  }
+}
+
+
+/* FORCER NAVBAR ECRITURE BLANCHE */
+.navbar .nav-link,
+.navbar .dropdown-menu a,
+.navbar .dropdown-item {
+  color: #ffffff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #00f0ff;
+  transition: all 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-menu a:hover,
+.navbar .dropdown-item:hover {
+  color: #00f0ff !important;
+}

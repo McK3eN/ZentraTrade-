@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-04-26 11:46:08",
+  "instrument": "ES 06-25",
+  "status": "LONG",
+  "quantity": 1,
+  "entryPrice": 5346.75,
+  "lastPrice": 5347.25,
+  "unrealizedPnL": 25.0,
+  "eventType": "OPEN"
+}

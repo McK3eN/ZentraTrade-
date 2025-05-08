@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Ton Site</title>
+
+  <!-- Bootstrap + Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Ton CSS Neon -->
+  <link rel="stylesheet" href="CSS/neon-theme.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top border-bottom border-warning">
+  <div class="container-fluid">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="calendar.html">Calendrier</a></li>
+	  <li class="nav-item"><a class="nav-link" href="statistics.html">Statistiques</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+        <ul class="dropdown-menu dropdown-menu-end bg-dark">
+          <li><a class="dropdown-item text-light" href="profile.html">Profil</a></li>
+          <li><a class="dropdown-item text-light" href="configure_accounts.html">Configurer comptes trading</a></li>
+          <li><a class="dropdown-item text-light" href="configure_hours.html">Configurer heures trading</a></li>
+          <li><a class="dropdown-item text-light" href="logout.html">Déconnexion</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contenu principal -->
+<div class="container-fluid px-4 mt-5">
+
+  <!-- 🔥 Sélecteur de compte spécial 🔥 -->
+<div class="d-flex justify-content-start my-4">
+  <select id="accountSelect" class="form-select w-auto" style="margin-left: 20px;">
+    <option value="All">Tous les comptes</option>
+    <!-- Options dynamiques -->
+  </select>
+</div>
+
+  <!-- 🔥 Tableau Accounts Overview sans intitulé 🔥 -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th class="text-center">Account</th>
+            <th class="text-center">Capital</th>
+            <th class="text-center">Profit €</th>
+            <th class="text-center">Profit %</th>
+          </tr>
+        </thead>
+        <tbody id="accountsTable">
+          <!-- Contenu dynamique -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 🛡️ Ensuite ton ancien contenu : objectifs / historique trades 🛡️ -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-center mb-4">
+        <div class="card-header">Daily Goal</div>
+        <div class="card-body">
+          <h5 class="card-title" id="dailyGoal">€0 / 0</h5>
+          <div class="progress">
+            <div id="dailyGoalBar" class="progress-bar bg-success" style="width: 0%">0%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card text-center mb-4">
+        <div class="card-header">Weekly Goal</div>
+        <div class="card-body">
+          <h5 class="card-title" id="weeklyGoal">€0 / 0</h5>
+          <div class="progress">
+            <div id="weeklyGoalBar" class="progress-bar bg-primary" style="width: 0%">0%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card text-center mb-4">
+        <div class="card-header">Monthly Goal</div>
+        <div class="card-body">
+          <h5 class="card-title" id="monthlyGoal">€0 / 0</h5>
+          <div class="progress">
+            <div id="monthlyGoalBar" class="progress-bar bg-info" style="width: 0%">0%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trade History -->
+  <div class="card">
+    <div class="card-header text-center">📈 Historique Des Trades</div>
+    <div class="card-body">
+    <div id="pagination" class="d-flex justify-content-center my-3"></div>
+	  <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Instrument</th>
+            <th>Result</th>
+            <th>Direction</th>
+            <th>Profit</th>
+            <th>Account</th>
+          </tr>
+        </thead>
+        <tbody id="tradeHistory">
+          <!-- Contenu dynamique -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="text-end"><strong>Total Profit:</strong></td>
+            <td id="totalProfit">0 €</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Ton JS Externe -->
+<script src="SCRIPT/index.js"></script>
+
+
+
+</body>
+</html>

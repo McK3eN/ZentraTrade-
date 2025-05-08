@@ -1,0 +1,26 @@
+===== Sauvegarde du 01-05-2025 10:27:53 =====
+AccountName: Playback101
+InitialCapital: 25000
+DailyGoal: 300
+DailyStop: 100
+AutomaticDailyWin: Non
+AveragingDownEnabled: Non
+TrailingStopEnabled: Non
+EmailNotificationsEnabled: Non
+DisplayLeaderboard: Non
+DisplayDashboard: Non
+----------------------------------------
+
+===== Sauvegarde du 01-05-2025 10:27:53 =====
+AccountName: Sim101
+InitialCapital: 10000
+DailyGoal: 100
+WeeklyGoal: 11000
+AutomaticDailyWin: Non
+AveragingDownEnabled: Non
+TrailingStopEnabled: Non
+EmailNotificationsEnabled: Non
+DisplayLeaderboard: Non
+DisplayDashboard: Non
+----------------------------------------
+

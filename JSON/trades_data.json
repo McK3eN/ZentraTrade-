@@ -1,0 +1,314 @@
+[
+  {
+    "timestamp": "2025-04-23 22:00:32",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 58.52,
+    "direction": "SHORT",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:08:06",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -91.48,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:18:26",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -128.98,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:20:45",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 817.04,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:31:27",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -3.98,
+    "direction": "SHORT",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:32:20",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -41.48,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:33:05",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 175.56,
+    "direction": "SHORT",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:33:36",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 175.56,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:34:40",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -124.44,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:37:04",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -86.94,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-23 22:52:51",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 8.52,
+    "direction": "SHORT",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-26 11:10:43",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -78.98,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:18:35",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -16.48,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:24:33",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 134.08,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:28:30",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -232.96,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:30:42",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -207.96,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:33:00",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -207.96,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:43:57",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -7.96,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:46:03",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -7.96,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-26 11:47:08",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -82.96,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 15:27:33",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -153.98,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 18:56:06",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 46.02,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 19:02:57",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -191.48,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 19:38:37",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -191.48,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 19:39:52",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -191.48,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 19:40:08",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -16.48,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:07:55",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -16.48,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:09:23",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 233.52,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:12:00",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -291.48,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:13:29",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -53.98,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:14:20",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -178.98,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:14:33",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -153.98,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:17:59",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -16.48,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:21:42",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 71.02,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:24:18",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 146.02,
+    "direction": "SHORT",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:30:02",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 21.02,
+    "direction": "LONG",
+    "account": "Playback101"
+  },
+  {
+    "timestamp": "2025-04-27 21:46:03",
+    "instrument": "ES 06-25",
+    "result": "WIN",
+    "profit": 46.02,
+    "direction": "LONG",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-27 21:46:35",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -16.48,
+    "direction": "SHORT",
+    "account": "Sim101"
+  },
+  {
+    "timestamp": "2025-04-27 21:49:43",
+    "instrument": "ES 06-25",
+    "result": "LOSS",
+    "profit": -103.98,
+    "direction": "LONG",
+    "account": "Playback101"
+  }
+]
